@@ -15,7 +15,7 @@ function randomNick() {
     let firstName = document.getElementById('firstName').value;
     let lastName = document.getElementById('lastName').value;
     nickIndex = Math.randomInt(0, nickArray.length);
-    document.getElementById('output0').innerHTML += firstName + ' ' + '"' + nickArray[imgIndex] + '"' + ' ' + lastName + '<br>'
+    document.getElementById('output0').innerHTML += firstName + ' ' + '"' + nickArray[nickIndex] + '"' + ' ' + lastName + '<br>'
 
 }
 
