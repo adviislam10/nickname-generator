@@ -1,7 +1,11 @@
 // Nickname Generator
 
 // Global Variable
-let nickArray = ['Top Dawg', 'King', 'Computer Connoisseur', 'Bossman', 'MVP', 'Big Body', 'Imposter']
+let nickArray = [];
+fetch("nickname.txt")
+.then((rawData) => rawData.text())
+.then((data) => nickArray = data.split("\r\n"));
+
 let nickIndex = 0;
 
 // Functions
